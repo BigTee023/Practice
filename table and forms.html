@@ -18,6 +18,16 @@
         th {
             background-color: #5c595910;
         }
+        h1{
+            font-size: xx-large;
+            text-align: center;
+            font-style: italic;
+        }
+        h2{
+            font-size: xx-large;
+            text-align: center;
+            font-style: italic;
+        }
     </style>
  <body>
     <h1>Practice On Tables and Forms</h1>
@@ -170,20 +180,40 @@
   </div>
   </section>  
     <hr>
-   <section>
+  <section>
   <div>
     <form action="">
+        <h2>Form</h2>
        <div>
-         <label for="Firstname">Firstame: <input type="text" name="name" id="name"></label>
+         <label for="Firstname">Firstame:<input type="text" name="name" id="Firstname" style="margin-inline-start: 17px;">
+        </label>
        </div>
-       <div>
-         <label for="Lastname">Lastname:<input type="text"></label>
+       <div style="margin-block-start: 10px;">
+         <label for="Lastname">Lastname:<input type="text" style="margin-inline-start: 10px;">
+        </label>
        </div>
-       <div>
-        <label for="Email">Email:<input type="text"></label>
+       <div style="margin-block-start: 10px;">
+        <label for="Email">Email:<input type="email" style="margin-inline-start: 34px;">
+        </label>
        </div>
-       <div>
-         
+       <div style="margin-block-start: 10px;">
+        <label for="Password">Passwod:<input type="password" name="password" minlength="8" style="margin-inline-start: 17px;">
+        </label>
+       </div>
+       <div style="margin-block-start: 10px;">
+        <label for="Phone-No">Phone No: <input type="text" maxlength="11" style="margin-inline-start: 5px;">
+        </label>
+       </div>
+       <div style="margin-block-start: 10px;">
+        <label for="Message">Comment:</label>
+        <textarea name="" id="Message" style="margin-inline-start: 6px;" rows="5" cols="21px"></textarea>
+       </div> 
+       <div style="margin-block-start: 10px;">
+         <button type="reset" style="background-color: rgb(87, 18, 165); border-color: azure;">Reset</button>
+       </div>
+       </div>
+       <div style="margin-block-start: 10px;">
+         <button type="submit" style="background-color: rgb(87, 18, 165); border-color: azure;">Submit</button>
        </div>
      </form>
   </div>
