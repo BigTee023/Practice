@@ -1,1 +1,5 @@
-body { background-color: rgb(136, 149, 161);    }
+body 
+{ background-color: rgb(136, 149, 161);    }
+caption{
+    font-size: x-large; color: rgb(96, 85, 146); 
+}

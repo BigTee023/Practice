@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Table Example</title>
-    <link rel="stylesheet" href="practice.css">
     <style>
+        body{
+          background-color: rgba(45, 121, 83, 0.473);
+        }
         table {
             width: 50%;
             border-collapse: collapse;
@@ -16,7 +18,13 @@
             text-align: left;
         }
         th {
-            background-color: #5c595910;
+            background-color: #862828d3;
+        }
+        tbody{
+            background-color: azure;
+        }
+        tfoot{
+            background-color: #862828d3;;
         }
         h1{
             font-size: xx-large;
@@ -27,6 +35,24 @@
             font-size: xx-large;
             text-align: center;
             font-style: italic;
+        }
+        .reset-button{
+            background-color: white;
+            border: 2px;
+            border-radius: 3px;
+            border-color: rgb(48, 98, 163);
+            color: rgb(48, 98, 163);
+            height: 30px;
+            width: 60px;
+            cursor: pointer;
+            border-style: solid;
+        }
+        .submit-button{
+            background-color: rgb(156, 15, 15);
+            color: white;
+            width: 60px;
+            border: none;
+            cursor: pointer
         }
     </style>
  <body>
@@ -207,16 +233,23 @@
        <div style="margin-block-start: 10px;">
         <label for="Message">Comment:</label>
         <textarea name="" id="Message" style="margin-inline-start: 6px;" rows="5" cols="21px"></textarea>
-       </div> 
-       <div style="margin-block-start: 10px;">
-         <button type="reset" style="background-color: rgb(87, 18, 165); border-color: azure;">Reset</button>
        </div>
        </div>
        <div style="margin-block-start: 10px;">
-         <button type="submit" style="background-color: rgb(87, 18, 165); border-color: azure;">Submit</button>
+        <input type="checkbox" name="tables" id="tables">
+        <label for="tables">Tables</label>
+        <input type="checkbox" name="forms" id="forms">
+        <label for="forms">Forms</label>
+       </div>
+        <div style="margin-block-start: 10px;">
+         <button class="reset-button" type="reset">Reset</button>
+       </div>
+        <div style="margin-block-start: 10px;">
+         <button class="submit-button" type="submit">Submit</button>
        </div>
      </form>
   </div>
+  
   </section> 
  </body>  
 </head>
